@@ -1,0 +1,42 @@
+{
+	"expo": {
+		"name": "OxySpace",
+		"slug": "oxy-space",
+		"scheme": "oxy-space",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "automatic",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"enabled": false
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.oxyspace.app"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.oxyspace.app"
+		},
+		"extra": {
+			"eas": {
+				"projectId": "0d50ff29-b3db-4dcd-bcfa-43ae97127e14"
+			}
+		},
+		"owner": "ranokay",
+		"plugins": ["expo-router"],
+		"experiments": {
+			"tsconfigPaths": true,
+			"typedRoutes": true
+		}
+	}
+}

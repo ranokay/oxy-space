@@ -1,0 +1,23 @@
+name = "oxy-space-api"
+compatibility_date = "2023-08-14"
+send_metrics = false
+account_id = "2cbd0bfcfea2b8145ae7f80da7f85841"
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "production"
+database_id = "5f25d8ad-e3a5-47cf-9f03-dd1f9ec24abd"
+migrations_dir = "migrations"
+
+# The necessary secrets are:
+# - APP_URL - for preventing CORS errors
+# - JWT_VERIFICATION_KEY - for Supabase @link https://supabase.com
+#
+# For local development, you can create a file called .dev.vars and use dotenv syntax.
+#
+# For deployed environments, you can use wrangler secrets to set these values.
+# For example:
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
+# Or use the Cloudflare web interface.
+# @link https://developers.cloudflare.com/workers/platform/environment-variables/#environment-variables-via-the-dashboard
+#

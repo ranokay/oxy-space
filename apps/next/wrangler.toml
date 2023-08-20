@@ -1,0 +1,8 @@
+[env.preview]
+name = "oxy-space-preview"
+workers_dev = true
+
+[env.production]
+name = "oxy-space"
+route = "oxy-space.oxystack.com/*"
+workers_dev = false

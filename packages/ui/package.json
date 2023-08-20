@@ -1,0 +1,33 @@
+{
+	"name": "@oxy-space/ui",
+	"version": "2.0.0",
+	"sideEffects": ["*.css"],
+	"private": true,
+	"types": "./types/index",
+	"main": "src/index.tsx",
+	"module:jsx": "src",
+	"files": ["types", "dist"],
+	"scripts": {
+		"build": "tamagui-build",
+		"watch": "tamagui-build --watch",
+		"clean": "rimraf dist types node_modules .turbo"
+	},
+	"dependencies": {
+		"@oxy-space/api": "workspace:*",
+		"@shopify/flash-list": "^1.5.0",
+		"@supabase/supabase-js": "^2.32.0",
+		"@tamagui/animations-react-native": "^1.52.9",
+		"@tamagui/font-inter": "^1.52.9",
+		"@tamagui/react-native-media-driver": "^1.52.9",
+		"@tamagui/shorthands": "^1.52.9",
+		"@tamagui/themes": "^1.52.9",
+		"@tamagui/toast": "^1.52.9",
+		"@tanstack/react-table": "^8.9.3",
+		"@tanstack/react-virtual": "^3.0.0-beta.54",
+		"jotai": "^2.3.1",
+		"tamagui": "^1.52.9"
+	},
+	"devDependencies": {
+		"@tamagui/build": "^1.52.9"
+	}
+}

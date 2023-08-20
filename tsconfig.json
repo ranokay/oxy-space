@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@oxy-space/app/*": [
+        "./packages/app/*"
+      ],
+      "@oxy-space/api/*": [
+        "./packages/api/*"
+      ],
+      "@oxy-space/ui/*": [
+        "./packages/ui/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "@nderscore/tamagui-typescript-plugin",
+        "pathToApp": "apps/next",
+        "defaultTheme": "light"
+      }
+    ]
+  },
+  "extends": "expo/tsconfig.base"
+}

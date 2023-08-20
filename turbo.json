@@ -1,0 +1,28 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"globalDependencies": ["**/.env.*local"],
+	"pipeline": {
+		"@oxy-space/next#build": {
+			"dependsOn": ["@oxy-space/ui#build"],
+			"inputs": ["pages/**", "public/**"],
+			"outputs": [".next/**", "!.next/cache/**"]
+		},
+		"@oxy-space/expo#postinstall": {
+			"outputs": [".tamagui/**"]
+		},
+		"@oxy-space/ui#build": {
+			"outputs": ["dist/**"]
+		},
+		"@oxy-space/api#generate": {
+			"inputs": ["src/db/schema.ts"],
+			"outputs": ["migrations/**"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"clean": {
+			"cache": false
+		}
+	}
+}
